@@ -4,23 +4,27 @@ import matplotlib.pyplot as plt
 #%matplotlib inline
 import numpy as np
 
-im_1=plt.imread("1.jpg")
+image_1=plt.imread("test.jpg")
 
-plt.imshow(im_1)
+plt.imshow(image_1)
 plt.show()
 
-def function(image_1):
-    print("Resmin boyutu = ",image_1.ndim,"\n") 
-    print("Resmin Shape değeri = ",image_1.shape,"\n")
-    print("Red için min değer = ",image_1[:,:,0].min(),"\n") #0 R yi ifade eder ve 3 boyutlu olmasını sağlar
-    print("Red için max değer = ",image_1[:,:,0].max(),"\n") #":" işareri her satır ve sütünu taramamızı sağlar
+def myFunc(image_1):
+    print("Dimension of image : ",image_1.ndim,"\n")
+    print("Shape value of image : ",image_1.shape)
+    print("max value for Red : ",np.max(image_1[:,:,0]))#0 degeri R yi gösterir ve 3.boyut katar.
+    print("min value for Red : ",np.max(image_1[:,:,0]))
+    print("max value for Green : ",np.max(image_1[:,:,1]))
+    print("min value for Green : ",np.max(image_1[:,:,1])) #':' işareti her sütünu ve her satırı taramasını saglar.
+    print("max value for Blue : ",np.max(image_1[:,:,2]))
+    print("min value for Red : ",np.max(image_1[:,:,2]))
     
-function(im_1)
-
-im_1[:,:,0]=im_1[:,:,0]+50
-
-plt.imshow(im_1)
+myFunct(image_1)
+    
+image_1[:,:,0] = image_1[:,:,0]+150
+plt.imshow(image_1)
 plt.show()
+
 
 def my_function_1(my_img):
     
