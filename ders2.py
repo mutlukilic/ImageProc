@@ -12,8 +12,8 @@ plt.show()
 def function(image_1):
     print("Resmin boyutu = ",image_1.ndim,"\n") 
     print("Resmin Shape değeri = ",image_1.shape,"\n")
-    print("Red için min değer = ",image_1[:,:,0].min(),"\n") #':' hangi yerde kullanıldıysa oranın tamamından bahsediyor örneğin burada tüm satırlar ve sütünlar
-    print("Red için max değer = ",image_1[:,:,0].max(),"\n") # şuan kırmızı için olan değerlere bakıyoruz 1 olsa yeşil 2 olursa mavi
+    print("Red için min değer = ",image_1[:,:,0].min(),"\n") #0 R yi ifade eder ve 3 boyutlu olmasını sağlar
+    print("Red için max değer = ",image_1[:,:,0].max(),"\n") #":" işareri her satır ve sütünu taramamızı sağlar
     
 function(im_1)
 
