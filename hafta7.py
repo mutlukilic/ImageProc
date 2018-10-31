@@ -1,3 +1,14 @@
+#a-) 28x28 boyutlarında içeriği 0 ve 1 olan bir matris üretiniz.
+# --- my_create_m(): return result=[]28x28  içeriği 0 1 matris
+#b-) A şıkkında üretilen matrisle 1 leri içeren MBR dikdörtgeni üreten fonksiyonu yazınız
+# --- def my_MBR (matrix_block) 1 leri içeren en küçük dikdörtgeni değeri elde edicek
+#c-) Kendisine aktarılan iki vektörün benzerliğini return eden fonksiyonu yazınız.
+# --- def ... (a,b)  skaler çarpımı göndercek geri
+#d-) A şıkkında yazdığınız fonksiyonu kullanarak 100 farklı matris elde edip birinci 
+#üretilen ile diğerlerini karşılaştırıp(distance) yakınlığını ve benzerliğini listeleyiniz
+# --- 100 tane A daki fonk çağır ordaki 100 tanesini 1. ile karşılaştır
+# haftaya mnist data
+
 import numpy as np
 import matplotlib.pyplot as plt
 import random as random
