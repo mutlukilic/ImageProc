@@ -53,6 +53,20 @@ def get_similarity(character_a,character_b):
             my_similarity = my_similarity+character_a[i,j]*character_b[i,j]
     return my_similarity
     
-   c_1=matrix_create_28_by_28_with_0_1()
+c_1=matrix_create_28_by_28_with_0_1()
 c_2=matrix_create_28_by_28_with_0_1()
 get_similarity(c_1,c_2)
+
+def get_similarity_for_100_characters(kac_karakter=100):
+    characters=[]
+    for i in range(100):
+        new_char = matrix_create_28_by_28_with_0_1()
+        characters.append(new_char)
+    for i in range(100):
+        benzerlik=get_similarity(characters[0],characters[i])
+        print("0---"+str(i)+" ",benzerlik)
+
+c_1=matrix_create_28_by_28_with_0_1()
+c_2=matrix_create_28_by_28_with_0_1()
+get_similarity(c_1,c_2)
+get_similarity_for_100_characters(10)
