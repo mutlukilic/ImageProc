@@ -27,7 +27,6 @@
      virginica_petal_length_avg=np.mean(virginica[:,2])
      virginica_petal_width_avg=np.mean(virginica[:,3])
      
-     #eğer veriler sınıflara ayrılmışsa elimizdeki veri setinde sınıf sayısını bulabiliriz.
      def sinifsayisibul():
          h=[]
          for i in range(len(iris.target)):
@@ -92,7 +91,7 @@
      
          
      def get_flower(i): 
-         #iris data üzerinde bana i değerinde gelen datanın 0 2 3 sütunun donduruyorum
+       
          x=iris.data[i][0]
          y=iris.data[i][2]
          z=iris.data[i][3]
@@ -100,7 +99,7 @@
          
          
      def update_mu(): 
-         #150 ya kadar her bir çicek için bana class bilgisi ver güncelle ve geriye mu'leri ver
+         
          hata="yok"
          mu_0_counter=0.0001
          mu_0_sum=0
